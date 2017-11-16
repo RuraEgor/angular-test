@@ -1,0 +1,19 @@
+<div class="section-page__list list list_users">
+  <div class="list__add-user">
+    <a href="#!/form" class="but but_add-user"></a>
+  </div>
+  <a href="#!/user/{{user.id}}" ng-click="$ctrl.addCl()" class="list__item list-item list-item_user" ng-repeat="user in $ctrl.users">
+    <div class="list-item__fill-lev"></div>
+    <div class="list-item__img">
+      <img src="https://media.liveedu.tv/livestream_splashscreen/16/09/image_KSX2tyH.jpeg" alt="" class="list-item__img-elem">
+    </div>
+    <div class="list-item__data">
+      <h2 class="list-item__name">{{user.firstName}} {{user.lastName}}</h2>
+      <p class="list-item__text">some text</p>
+      <div class="list-item__skills list list_skills">
+        <div class="list-item list-item_skill">angular.js</div>
+        <div class="list-item list-item_skill">react</div>
+      </div>
+    </div>
+  </a>
+</div>

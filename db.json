@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "firstName": "Alina777",
+      "lastName": "Cornora",
+      "someText": "hello",
+      "description": "Какое-то описание",
+      "id": 3
+    },
+    {
+      "firstName": "afdasdf",
+      "lastName": "Cornora",
+      "someText": "hello",
+      "description": "Какое-то описание",
+      "id": 7
+    },
+    {
+      "firstName": "555555",
+      "lastName": "Cornora",
+      "someText": "hello",
+      "description": "Какое-то описание",
+      "id": 8
+    },
+    {
+      "firstName": "sadff",
+      "lastName": "Cornora",
+      "someText": "hello",
+      "description": "Какое-то описание",
+      "id": 9
+    },
+    {
+      "firstName": "ffffffsssss",
+      "lastName": "Cornora",
+      "someText": "hello",
+      "description": "Какое-то описание",
+      "id": 10
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

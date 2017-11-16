@@ -1,0 +1,30 @@
+<div class="section-page__content">
+  <div class="content-user">
+    <div class="content-user__img">
+      <img src="https://media.liveedu.tv/livestream_splashscreen/16/09/image_KSX2tyH.jpeg"
+           alt="" class="content-user__img-elem">
+    </div>
+    <div class="content-user__data">
+      <a href="#!/user/update/{{$ctrl.userId}}" class="content-user__close close"></a>
+      <div class="content-user__header">
+        <span class="content-user__name">{{$ctrl.user.firstName}} {{$ctrl.user.lastName}}</span>
+        <span class="content-user__self-data">(<span class="content-user__female">Female</span>, <span class="content-user__birthday">22.08.1990</span>)</span>
+      </div>
+      <div class="content-user__text">some text</div>
+      <div class="content-user__list list g-flex list_user">
+        <div class="list-item list-item_skill list-item_user-skill">angular.js</div>
+        <div class="list-item list-item_skill list-item_user-skill">react</div>
+        <div class="list-item list-item_skill list-item_user-skill">node.js</div>
+      </div>
+      <div class="content-user__descr">Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. A architecto asperiores commodi
+        exercitationem ipsum modi odit optio porro quasi repudiandae!
+        Culpa error est hic iusto nobis sed sit, ut. Alias aliquid,
+        cumque cupiditate deserunt dolores et illo impedit iure iusto nam
+        natus odit perferendis quibusdam voluptate voluptatum. Exercitationem
+        itaque, sapiente?
+      </div>
+      <div class="but but_remove-user" ng-click="$ctrl.deleteUser()">Delete user</div>
+    </div>
+  </div>
+</div>

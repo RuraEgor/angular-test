@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+@import "_setting";
+
+html,body
+  min-height: 100%
+  height: 100%
+
+html.start,
+body.start
+  overflow: hidden
+
+
+body
+  background: $bgBody
+  margin: 0
+  padding: 0
+  font-family: $FamCom
+  display: flex
+  flex-direction: column
+
+a
+  color: $colorLink
+  text-decoration: none
+  transition: all $dur
+  outline: none
+
+  &:hover
+    color: $colorLink-h
+
+p
+  margin: 0
+  padding: 0 0 10px 0
+
+h1,h2,h3,h4,h5,h6
+  line-height: 100%
+  font-family: $FamH
+  padding: 0
+  margin: 0
+
+.g-flex
+  display: flex
+
+.g-content-wr
+  max-width: $width
+  padding: 0 15px
+  width: 100%
+  margin: auto
+
+.but
+  cursor: pointer
+
+  &_remove-user
+    display: inline-block
+    float: right
+    margin-top: 100px
+    border-radius: 5px
+    color: #ffffff
+    font-size: 12px
+    line-height: 50px
+    padding: 0 5px
+    min-width: 150px
+    text-align: center
+    background: #bf5464
+    transition: background $dur
+
+  &_add-user
+    display: inline-block
+    box-sizing: border-box
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    border: 4px solid $gray
+    opacity: 1
+    transition: opacity $dur
+
+  &:hover
+    opacity: 0.7
+
+
+.close
+  position: absolute
+  z-index: 5
+  top: 15px
+  right: 0
+  display: inline-block
+  box-sizing: border-box
+  width: 30px
+  height: 30px
+  border-radius: 50%
+  border: 4px solid $gray
+  opacity: 1
+  transition: opacity $dur
+
+.main
+  flex-grow: 1
+  background: $colCont
+  
+.header
+  margin-bottom: 2px
+  background: $colBody
+  box-shadow: 0px 3px 3px rgb(179, 172, 172)
+
+  &__title
+    line-height: 50px
+    font-size: 27px
+    padding-left: 20px
+
+.section-page
+  display: flex
+  border-right: 2px solid $bordDark
+
+  &__content
+    position: relative
+    width: 100%
+    padding: 40px 40px 40px 30px
+
+  &__list
+    border-left: 2px solid $bordDark
+    border-right: 2px solid $bordDark
+    min-height: calc( 100vh - 50px)
+    flex-basis: 400px
+    min-width: 400px
+
+.list
+
+  &_skills
+    display: flex
+    flex-wrap: wrap
+
+  &_user
+    margin-bottom: 30px
+
+  &__add-user
+    min-height: 50px
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    border-bottom: 2px solid $bord
+
+  &-item_user
+    position: relative
+    display: flex
+    border-bottom: 2px solid $bord
+
+    &.active
+      &::after
+        content: ""
+        position: absolute
+        z-index: 2
+        background: $colCont
+        width: 2px
+        height: 100%
+        right: -2px
+
+  &-item
+    &__fill-lev
+      width: 10px
+      min-width: 10px
+      background: red
+
+    &__img
+      padding: 0 10px
+      position: relative
+      display: flex
+      align-items: center
+
+      &-elem
+        box-sizing: border-box
+        border-radius: 50%
+        width: 50px
+        height: 50px
+        background:
+        border: 1px solid #dbd7d9
+        object-fit: cover
+        object-position: center
+
+    &__data
+      padding: 20px 20px 20px 10px
+
+    &__name
+      margin-bottom: 10px
+      font-size: 21px
+
+    &__text
+      color: $colGray
+      font-size: 12px
+
+    &_skill
+      background: $grayLight
+      text-align: center
+      padding: 0 5px
+      min-width: 100px
+      margin-right: 10px
+      margin-bottom: 10px
+      line-height: 20px
+      border-radius: 3px
+      color: $green
+      font-size: 14px
+
+    &_user-skill
+      line-height: 25px
+
+
+.content-user
+  display: flex
+
+  &__img
+    padding-right: 20px
+
+    &-elem
+      display: inline-block
+      width: 120px
+      height: 120px
+      box-sizing: border-box
+      object-font: cover
+      object-position: center
+      border: 1px solid $bordDark
+
+  &__data
+    flex-grow: 1
+
+  &__header
+    margin-bottom: 20px
+
+  &__name
+    font-weight: bold
+    font-size: 23px
+    margin-right: 20px
+    color: $fontCont
+
+  &__female
+    font-size: 17px
+    color: $fontCont
+
+  &__birthday
+    font-size: 17px
+    color: $fontCont
+
+  &__text
+    color: $fontCont
+    margin-bottom: 30px
+
+  &__descr
+    color: $fontCont
+    line-height: normal
+    font-size: 17px

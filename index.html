@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" ng-app="usersApp">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <title>Google Phone Gallery</title>
+
+    <!-- css-files -->
+    <link rel="stylesheet" href="css/libs/normalize.css">
+    <link rel="stylesheet" href="src/style.css">
+    <!-- end css-files -->
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="users-list/users-list.module.js"></script>
+    <script src="users-list/users-list.component.js"></script>
+    <script src="user-detail/user-detail.module.js"></script>
+    <script src="user-detail/user-detail.component.js"></script>
+    <script src="user-form/user-form.module.js"></script>
+    <script src="user-form/user-form.component.js"></script>
+    <script src="user-update/user-update.module.js"></script>
+    <script src="user-update/user-update.component.js"></script>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="g-content-wr">
+        <h1 class="header__title">List</h1>
+      </div>
+    </header>
+    <main class="main">
+      <div class="g-content-wr section-page">
+
+        <users-list></users-list>
+
+        <div ng-view></div>
+
+      </div>
+    </main>
+
+    <!-- js-files-script -->
+    <!--<script src="js-script/script.js"></script>-->
+
+  </body>
+</html>
